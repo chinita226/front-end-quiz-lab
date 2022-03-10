@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1 id="head">Welcome to Fun Quiz Website!</h1>
+        </div>
+        <button id="create_quiz" onclick="createQuiz()">Create Your Own Quiz</button>
+    </header>
+
+    <form id="quiz" name="quiz">
+        <p>1. Which year falls in the 16th century ?</p>
+        <input type="checkbox" id="checkbox" name="question1" value="1555">
+        <label class="correct" for="checkbox">1555</label>
+        <input type="checkbox" id="checkbox" name="question1" value="1445">
+        <label for="checkbox">1445</label>
+        <input type="checkbox" id="checkbox" name="question1" value="1566">
+        <label class="correct" for="checkbox">1566</label>
+
+        <p>2. One kilometre is how many millimetres ?</p>
+        <input type="radio" id="mc" name="question2" value="1000" required>1,000<br>
+        <input type="radio" id="mc" name="question2" value="100">100<br>
+        <input type="radio" id="mc" name="question2" value="10">10<br>
+        <div class="correct"><input type="radio" id="mc" name="question2" value="1000000">1,000,000<br></div>
+        
+        <p>3. A hormone is ?</p>
+        <input type="radio" id="mc" name="question3" value="an electrical pulse" required>An electrical pulse<br>
+        <input type="radio" id="mc" name="question3" value="a cell">A cell<br>
+        <div class="correct"><input type="radio" id="mc" name="question3" value="a chemical">A chemical<br></div>
+        <input type="radio" id="mc" name="question3" value="fish">A fish<br>
+        
+        <p>4. A Tsunami is a ?</p>
+        <input type="radio" id="mc" name="question4" value="earthquake" required>An earthquake<br>
+        <input type="radio" id="mc" name="question4" value="avalanche">An avalanche<br>
+        <div class="correct"><input type="radio" id="mc" name="question4" value="wave">A giant wave<br></div>
+        <input type="radio" id="mc" name="question4" value="cyclone">A cyclone<br>
+
+        <p>5. What connects the Red Sea with the Mediterranean Sea ?</p>
+        <input type="radio" id="mc" name="question5" value="west bank" required>The West Bank<br>
+        <input type="radio" id="mc" name="question5" value="antonovich">The antonovich Bridge<br>
+        <input type="radio" id="mc" name="question5" value="gilbralta">Straits of Gilbralta<br>
+        <div class="correct"><input type="radio" id="mc" name="question5" value="suez canal">Suez Canal<br></div>
+
+        <p>6. Oliver Reed died during the making of which film ?</p>
+        <input class="textbox" id="textbox" type="text" name="question6">
+
+        <p>7. What's river runs through Rome ?</p>
+        <input type="radio" id="mc" name="question7" value="rhine" required>The Rhine<br>
+        <input type="radio" id="mc" name="question7" value="thames">The Thames<br>
+        <input type="radio" id="mc" name="question7" value="nile">The Nile<br>
+        <input type="radio" id="mc" name="question7" value="seine">The Seine<br>
+        <div class="correct"><input type="radio" id="mc" name="question7" value="tiber">The Tiber<br></div>
+
+        <p>8. What is the plural of the word Moose ?</p>
+        <input class="textbox" id="textbox" type="text" name="question8">
+
+        <p>9. Which of these is the largest museum ?</p>
+        <input type="radio" id="mc" name="question9" value="louver" required>The Louver, Paris<br>
+        <input type="radio" id="mc" name="question9" value="natural history">Natural History Museum, London<br>
+        <div class="correct"><input type="radio" id="mc" name="question9" value="smithsonian">Smithsonian, Washington<br></div>
+        <input type="radio" id="mc" name="question9" value="guggenheim">Guggenheim, New York<br>
+
+
+        <p>10. Piano Sonata No. 14, commonly known as the Moonlight Sonata, was written by ?</p>
+        <input type="radio" id="mc" name="question10" value="mozart" required>Mozart<br>
+        <div class="correct"><input type="radio" id="mc" name="question10" value="beethoven">Beethoven<br></div>
+        <input type="radio" id="mc" name="question10" value="bach">Bach<br>
+        <input type="radio" id="mc" name="question10" value="chopin">Chopin<br>
+
+        <p>11. What part of the human body is the 'oxter'? </p>
+        <input type="radio" id="mc" name="question11" value="neck" required>The neck<br>
+        <input type="radio" id="mc" name="question11" value="upper back">The upper back<br>
+        <input type="radio" id="mc" name="question11" value="chest">The chest<br>
+        <div class="correct"><input type="radio" id="mc" name="question11" value="armpit">The armpit<br></div>
+
+        <p>12. In golf, a sharp bend in the fairway is a ?</p>
+        <input class="textbox" id="textbox" type="text" name="question12">
+
+        <p>13. What is 2010 in roman numerals ?</p>
+        <input class="textbox" id="textbox" type="text" name="question13">
+
+        <p>14. Benidorm and Alicante are situated on which of the Spanish 'costas' ?</p>
+        <input type="radio" id="mc" name="question14" value="dorada" required>Dorada<br>
+        <input type="radio" id="mc" name="question14" value="brava">Brava<br>
+        <div class="correct"><input type="radio" id="mc" name="question14" value="blanca">Blanca<br></div>
+        <input type="radio" id="mc" name="question14" value="del sol">Del Sol<br>
+
+        <p>15. Joan Collins played who in Dynasty ?</p>
+        <input type="radio" id="mc" name="question15" value="krystle" required>Krystel Jennings<br>
+        <input type="radio" id="mc" name="question15" value="sammy">Sammy Jo Dean<br>
+        <div class="correct"><input type="radio" id="mc" name="question15" value="alexis">Alexis Coby<br></div>
+        <input type="radio" id="mc" name="question15" value="linda">Linda Evans<br>
+
+        <p>16. James Bond works for ?</p>
+        <input type="radio" id="mc" name="question16" value="m15" required>M15<br>
+        <div class="correct"><input type="radio" id="mc" name="question16" value="m16">M16<br></div>
+        <input type="radio" id="mc" name="question16" value="ira">IRA<br>
+        <input type="radio" id="mc" name="question16" value="uvf">UVF<br>
+
+        <p>17. What is the number of the dreaded room in the book 'Nineteen Eighty Four' ?</p>
+        <input type="radio" id="mc" name="question17" value="13" required>Room 13<br>
+        <input type="radio" id="mc" name="question17" value="69">Room 69<br>
+        <input type="radio" id="mc" name="question17" value="66">Room 66<br>
+        <div class="correct"><input type="radio" id="mc" name="question17" value="101">Room 101<br></div>
+
+        <p>18. What is the Thursday before Easter called ?</p>
+        <input type="radio" id="mc" name="question18" value="fasting" required>Fasting Thursday<br>
+        <input type="radio" id="mc" name="question18" value="passover">Passover Thursday<br>
+        <input type="radio" id="mc" name="question18" value="hungry">Hungry Thursday<br>
+        <div class="correct"><input type="radio" id="mc" name="question18" value="maundy">Maundy Thursday<br></div>
+
+        <p>19. 'The Blue Rider' was ...</p>
+        <div class="correct"><input type="radio" id="mc" name="question19" value="car" required>A car<br></div>
+        <input type="radio" id="mc" name="question19" value="wild cowboy">A wild cowboy<br>
+        <input type="radio" id="mc" name="question19" value="artists">A group of artists<br>
+        <input type="radio" id="mc" name="question19" value="cafe">A cafe<br>
+        
+
+        <p>20. In the field of science, what does REM stand for ?</p>
+        <input class="textbox" id="textbox" type="text" name="question20"><br>
+
+        <input id="button" type="submit" value="Submit">
+        
+    </form>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <div id="after_submit">
+        <input type="button" id="button" value="Answers" onclick="btnGreen()">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="photo">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1 id="head">Welcome to Fun Quiz Website!</h1>
+        </div>
+        <button id="create_quiz" onclick="backQuiz()">Back to Quiz</button>
+    </header>
+
+    <div id="quiz" name="quiz">
+        <button class="add_question" id="button">Add a question</button>
+        <select class="answers" id="answers">
+            <option value="choose">Choose answer types</option>
+            <option value="mtc">Checkbox choices</option>
+            <option value="single">Radio button</option>
+            <option value="text">Text</option>
+        </select>
+        <div class="boxDiv" id="boxHidden">
+            <input class="textbox" id="boxAnswer" type="text" name="box">
+            <button class="add_box" id="button">Create checkbox</button>
+        </div>
+        <div class="radioDiv" id="radioHidden">
+            <input class="textbox" id="radioAnswer" type="text" name="radio">
+            <button class="add_radio" id="button">Create radio</button>
+        </div>
+    </div>
+
+    <script src="create_quiz.js"></script>
+</body>
+</html>

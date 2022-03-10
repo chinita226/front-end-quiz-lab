@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/97fde28207.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="headerDiv">
+        <h1 id="head">Are you ready for the challenge?</h1>
+    </div>
+    <div class="loginDiv">
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname"><br>
+        <label for="name">Last name: </label><br>
+        <input type="text" id="lastname"><br>
+        <label for="email">email address: </label><br>
+        <input type="email" id="email"><br>
+        <button id="save_btn" type="button" onclick="client_validate()">Save</button><br>
+        <button id="play_btn" onclick="redirectQuiz()">Play</button><br>
+        <button id="create_quiz" onclick="createQuiz()">Create Quiz</button>
+    </div>
+    
+    <script src="login.js"></script>
+
+
+</body>
+</html>
