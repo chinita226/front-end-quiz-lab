@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
 });
 
 function createQuiz(){
-    window.location = "/grade3_try/create.html"
+    window.location = "./create.html"
 }
 
 function check() {
@@ -101,7 +101,7 @@ function check() {
     }
 
     var messages = ["You are killing it!!!", "That was a nice try!!!", "You suck! Joking, just do better next time :)"]
-    var photos = ["assets/success.gif", "assets/try-again.gif", "assets/bad.gif"]
+    var photos = ["./assets/success.gif", "./assets/try-again.gif", "./assets/bad.gif"]
     var range
 
     if(correct<=3) {

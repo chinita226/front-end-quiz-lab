@@ -48,9 +48,9 @@ function showButton() {
 }
 
 function redirectQuiz() {
-    window.location = "/grade3_try/quiz.html"
+    window.location = "./quiz.html"
 }
 
 function createQuiz(){
-    window.location = "/grade3_try/create.html"
+    window.location = "./create.html"
 }

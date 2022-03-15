@@ -1,6 +1,6 @@
 
 function backQuiz(){
-    window.location = "/grade3_try/quiz.html"
+    window.location = "./quiz.html"
 }
 
 
